@@ -122,6 +122,7 @@ body {
   padding: 0;
   font-size: 0px;
   background-color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .results-carousel video {
@@ -130,7 +131,7 @@ body {
 }
 
 .carousel{
-  
+
 }
 
 .item-truck{
@@ -141,8 +142,17 @@ body {
   background-color: rgb(199, 193, 156);
 }
 
-.item-horn{
-  background-color: rgb(95, 76, 99);
+.item-two-dog-cat{
+  background-color: rgb(255, 255, 255);
+}
+
+.cropped {
+  width: 50%;
+  margin: 0px 0px -40px 0px;
+}
+
+.mid {
+  vertical-align: middle;
 }
 
 /* .interpolation-panel {
