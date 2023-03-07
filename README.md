@@ -1,4 +1,4 @@
-# Ref-NPR.github.io
-[Homepage](https://ref-npr.github.io/) for ***Ref-NPR: Reference-Based Non-Photorealistic Radiance Fields***.
+# Video-P2P.github.io
+[Homepage](https://video-p2p.github.io/) for ***Video-P2P: Video Editing with Cross-attention Control***.
 
-![image](./assets/teaser.png)
+![image](./assets/teaser.pdf)
