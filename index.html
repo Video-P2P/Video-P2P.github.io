@@ -127,47 +127,45 @@
     <div class="hero-body">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-mic-abc">
-            <video poster="" id="mic-abc" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/full_npr_mic.mp4" type="video/mp4">
-            </video>
+          <div class="item item-dog-cat">
+            <img src="./assets/prompts/dog-cat.png", width="100%">
+            <img src="./assets/dog_inversion.gif", width="50%">
+            <img src="./assets/cat_p2p.gif", width="50%">
           </div>
-          <div class="item item-chair-leaf">
-            <video poster="" id="chair-leaf" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/leafchair.mp4" type="video/mp4">
-            </video>
+          <div class="item item-car-railway">
+            <img src="./assets/prompts/car-railway.png", width="100%">
+            <img src="./assets/car_inversion.gif", width="50%">
+            <img src="./assets/railway_p2p.gif", width="50%">
           </div>
-          <div class="item item-tree-red">
-            <video poster="" id="tree-red" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/ficus04.mp4" type="video/mp4">
-            </video>
+          <div class="item item-child-lego">
+            <img src="./assets/prompts/Lego-child.png", width="100%">
+            <img src="./assets/child_inversion.gif", width="50%">
+            <img src="./assets/Lego_p2p.gif", width="50%">
           </div>
-          <div class="item item-plate-plain">
-            <video poster="" id="plate-plain" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/hotdog_notmt.mp4" type="video/mp4">
-            </video>
+          <div class="item item-motor-spider">
+            <img src="./assets/prompts/motor.png", width="100%">
+            <img src="./assets/motor_inversion.gif", width="50%">
+            <img src="./assets/spider_p2p.gif", width="50%">
           </div>
-          <div class="item item-plate-ketchup">
-            <video poster="" id="plate-ketchup" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/hotdog_tmt.mp4" type="video/mp4">
-            </video>
+          <div class="item item-tiger-lego">
+            <img src="./assets/prompts/tiger.png", width="100%">
+            <img src="./assets/tiger_inversion.gif", width="50%">
+            <img src="./assets/Lego-tiger_p2p.gif", width="50%">
           </div>
-          <div class="item item-mic-blue">
-            <video poster="" id="mic-blue" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/darkmic.mp4" type="video/mp4">
-            </video>
+          <div class="item item-lion-king-kong">
+            <img src="./assets/prompts/lion.png", width="100%">
+            <img src="./assets/lion_inversion.gif", width="50%">
+            <img src="./assets/King-Kong_p2p.gif", width="50%">
           </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline width="100%"
-              style="padding-top:13%; padding-bottom:13%">
-              <source src="./assets/npr_flower.mp4" type="video/mp4">
-            </video>
+          <div class="item item-two-dog-cat">
+            <img src="./assets/prompts/twodogs.png", width="100%">
+            <img src="./assets/twodogs_inversion.gif", width="50%">
+            <img src="./assets/twocats_p2p.gif", width="50%">
           </div>
-          <div class="item item-horn">
-            <video poster="" id="horn" autoplay controls muted loop playsinline height="100%"
-              style="padding-top:13%; padding-bottom:13%">
-              <source src="./assets/horn.mp4" type="video/mp4">
-            </video>
+          <div class="item item-man-kobe">
+            <img src="./assets/prompts/ball.png", width="100%">
+            <img src="./assets/ball_inversion.gif", width="50%">
+            <img src="./assets/kobe_p2p.gif", width="50%">
           </div>
         </div>
       </div>
@@ -184,14 +182,14 @@
           <div class="content has-text-justified">
             <p>
               This paper presents Video-P2P, a novel framework for real-world video editing with cross-attention control.
-              While attention control has proven effective for image editing with pre-trained generative models, there are currently no large-scale video generation models publicly available.
-              Video-P2P addresses this limitation by demonstrating that a pre-trained image diffusion model can complete various video editing tasks.
-              For video inversion, we propose to tune a Text-to-Set (T2S) model to complete the pivotal inversion and optimize a shared null-text embedding to achieve accurate video inversion with a small memory cost.
+              While attention control has proven effective for image editing with pre-trained image generation models, there are currently no large-scale video generation models publicly available.
+              Video-P2P addresses this limitation by adapting an image generation diffusion model to complete various video editing tasks.
+              Specifically, we propose to first tune a Text-to-Set (T2S) model to complete the pivotal inversion and then optimize a shared null-text embedding to achieve accurate video inversion with a small memory cost.
               For attention control, we introduce a novel decoupled-guidance strategy, which uses different guidance strategies for the source and target prompts.
-              The optimized null-text embedding for the source prompt improves reconstruction ability, while an initialized null-text embedding for the target prompt enables editability.
+              The optimized null-text embedding for the source prompt improves reconstruction ability, while an initialized null-text embedding for the target prompt enhances editability.
               Incorporating the attention maps of these two branches enables detailed editing.
               These technical designs enable various text-driven editing applications, including word swap, prompt refinement, and attention re-weighting.
-              Video-P2P works on real-world videos to generate new characters while optimally maintaining their original poses and scenes.
+              Video-P2P works well on real-world videos for generating new characters while optimally preserving their original poses and scenes.
               It is also capable of changing global properties such as weather or style.
             </p>
           </div>
