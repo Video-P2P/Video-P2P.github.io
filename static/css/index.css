@@ -154,6 +154,11 @@ body {
 .mid {
   vertical-align: middle;
 }
+.center-img{
+  clear: both;
+  display: block;
+  margin: auto;
+}
 
 /* .interpolation-panel {
   background: #f5f5f5;
